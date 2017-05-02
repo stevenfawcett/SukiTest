@@ -1,0 +1,16 @@
+<h2>Test Teams</h2>
+<table style="width: 100%">
+  <thead>
+    <tr>
+      <th>Url</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @teams.each do |team| %>
+    <tr>
+      <td><%= link_to team.name, bookmark.url %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
